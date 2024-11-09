@@ -1,16 +1,19 @@
 import { lazy, Suspense } from "react";
-import { Route, Routes, Link } from "react-router-dom"; // Correct import
+import { Route, Routes, Link, useLocation } from "react-router-dom"; // Correct import
 
 import ErrorBoundary from "./features/ErrorBoundary";
 import "./App.css";
 
 const Home = lazy(() => import("./features/Home"));
-const SignUp = lazy(() => import("./features/SignUp"));
+const SignUp = lazy(() => import("./features/signUp/SignUp"));
 const CreateGame = lazy(() => import("./features/CreateGame"));
 
 function App() {
+  const location = useLocation();
+  const hideNav = ['/'];
   return (
       <div className="container">
+        {!hideNav.includes(location.pathname) && (
         <nav>
           <ul>
             <li>
@@ -21,6 +24,7 @@ function App() {
             </li>
           </ul>
         </nav>
+)}
         <ErrorBoundary>
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>

@@ -1,0 +1,28 @@
+.menu {
+  display: flex;
+  gap: 5rem;
+  place-items: center;
+  min-height: 85vh;
+  min-width: 90%;
+}
+
+.menu a {
+  color: rgb(35, 97, 184);
+  font-size: xx-large;
+  background-color: transparent;
+  text-decoration: none;
+  transition: background-color 0.43s ease, color 0.3s ease;
+}
+
+.menu a:hover {
+  color: rgb(200, 214, 234);
+  font-size: xx-large;
+}
+
+.menu:hover {
+  color: darkblue;
+
+  
+  /* padding: 8px 12px;
+  border-radius: 4px; */
+}
