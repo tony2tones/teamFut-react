@@ -1,4 +1,4 @@
-import field from "./john-o-nolan-o_field-unsplash.jpg";
+import field from "./john-o-nolan-o_field-unsplash-min.jpg";
 export default function CreateGame() {
   return (
     <div className="container">

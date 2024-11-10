@@ -1,4 +1,4 @@
-import playerProfile from "./playerProfile.jpg";
+import playerProfile from "./playerProfile-min.jpg";
 import { Link } from "react-router-dom";
 import "./signUp.css";
 export default function SignUp() {
