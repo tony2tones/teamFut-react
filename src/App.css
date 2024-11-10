@@ -6,6 +6,12 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,     /* Light center */
+    rgba(36, 36, 36, 1) 60%           /* Dark outer edge */
+  );
+  background-size: cover;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
