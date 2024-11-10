@@ -15,6 +15,12 @@
     object-fit: cover;
     padding-bottom: 2rem
   }
+
+  .image-container {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
  
   .button-link {
     display: inline-block;

@@ -4,6 +4,7 @@ import "./home.css";
 export default function Home() {
   return (
     <div className="container">
+        <h3>Welcome to TeamFut</h3>
       <div className="menu">
         <div>
           <Link to={"/sign-up"} className="join-game-link">
